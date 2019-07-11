@@ -2,11 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import smtplib
 import time
-
-URL = 'https://www.amazon.com/Apple-MacBook-Retina-2-3GHz-Quad-Core/dp/B072QG8BX6/ref=sr_1_2_sspa?keywords=mac+pro&qid=1562882066&s=gateway&sr=8-2-spons&psc=1'
-
-header = {'User':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 \
-    (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36'}
+#insert URL
+URL = 'URL'
+#google header agent then insert header agent
+header = {'User':'header agent'}
 
 def check_price(URL):
     page = requests.get(URL, headers=header)
